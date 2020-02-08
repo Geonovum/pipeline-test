@@ -1,10 +1,13 @@
-name: 'Toepassingsprofiel opsplitsen'
-description: 'Toepassingsprofiel opsplitsen'
+name: 'Hello World'
+description: 'Greet someone and record the time'
 inputs:
-  tpod-id:
-    description: 'Toepassingsprofiel id'
+  who-to-greet:  # id of input
+    description: 'Who to greet'
     required: true
-    default: 'geen'
+    default: 'World'
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
 runs:
   using: 'node12'
   main: 'index.js'
