@@ -9,7 +9,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       - name: Push action step
-        uses: ./action.yml
+        uses: ./
         id: push
         with:
           tpod-id: 'bt'
