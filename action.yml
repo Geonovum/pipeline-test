@@ -1,13 +1,13 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'Toepassingsprofiel opsplitsen'
+description: 'Toepassingsprofiel opsplitsen'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  tpod-id:  # id of input
+    description: 'Toepassingsprofiel id'
     required: true
     default: 'World'
 outputs:
   time: # id of output
-    description: 'The time we greeted you'
+    description: 'Timestamp'
 runs:
   using: 'node12'
   main: 'index.js'
