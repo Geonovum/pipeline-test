@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  toepassingsprofiel_opsplitsen:
+    runs-on: ubuntu-latest
+    name: Toepassingsprofiel opsplitsen
+    steps:
+      # To use this repository's private action, you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Push action step
+        uses: ./push/
+        id: push
+        with:
+          tpod-id: 'bt'

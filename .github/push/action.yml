@@ -1,0 +1,10 @@
+name: 'Toepassingsprofiel opsplitsen'
+description: 'Toepassingsprofiel opsplitsen'
+inputs:
+  tpod-id:
+    description: 'Toepassingsprofiel id'
+    required: true
+    default: 'geen'
+runs:
+  using: 'node12'
+  main: 'index.js'
