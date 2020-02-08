@@ -8,11 +8,12 @@ jobs:
       # To use this repository's private action, you must check out the repository
       - name: Checkout
         uses: actions/checkout@v1
+        run: mkdir -p output
       - name: Push action step
         uses: ./
         id: push
         with:
           tpod-id: 'bt'
-        # Use the output from the `hello` step
+      # Use the output from the `push` step
       - name: Get the output time
         run: echo "The time was ${{ steps.push.outputs.time }}"
