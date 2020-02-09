@@ -2,14 +2,14 @@ const core = require('@actions/core');
 const github = require('@actions/github');
 
 try {
-  // `who-to-greet` input defined in action metadata file
+  // `tpod-id` moet uitgelezen worden uit een job-file
   const tpodId = core.getInput('tpod-id');
   console.log(`tpod-id: ${tpodId}`);
   const time = (new Date()).toTimeString();
   core.setOutput("time", time);
-  // Get the JSON webhook payload for the event that triggered the workflow
+  // JSON webhook payload
   const payload = JSON.stringify(github.context.payload, undefined, 2)
-  console.log(`The event payload: ${payload}`);
+  console.log(`event payload: ${payload}`);
 } catch (error) {
   core.setFailed(error.message);
 }
