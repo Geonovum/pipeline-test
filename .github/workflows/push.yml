@@ -8,8 +8,6 @@ jobs:
       # To use this repository's private action, you must check out the repository
       - name: Checkout
         uses: actions/checkout@v1
-      - name: Init
-        run: mkdir -p ./output/
       - name: Push action step
         uses: ./
         id: push
