@@ -4,7 +4,7 @@ inputs:
   tpod-id:  # id of input
     description: 'Toepassingsprofiel id'
     required: true
-    default: 'World'
+    default: 'geen'
 outputs:
   time: # id of output
     description: 'Timestamp'
