@@ -1,0 +1,13 @@
+name: 'Toepassingsprofiel opsplitsen'
+description: 'Toepassingsprofiel opsplitsen'
+inputs:
+  tpod-id:  # id of input
+    description: 'Toepassingsprofiel id'
+    required: true
+    default: 'World'
+outputs:
+  time: # id of output
+    description: 'Timestamp'
+runs:
+  using: 'node12'
+  main: 'index.js'
