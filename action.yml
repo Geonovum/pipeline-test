@@ -1,5 +1,5 @@
-name: 'Toepassingsprofiel opsplitsen'
-description: 'Toepassingsprofiel opsplitsen'
+name: 'Toepassingsprofiel splitsen'
+description: 'Toepassingsprofiel splitsen'
 inputs:
   tpod-id:  # id of input
     description: 'Toepassingsprofiel id'

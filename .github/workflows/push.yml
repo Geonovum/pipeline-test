@@ -1,9 +1,10 @@
+name: Toepassingsprofiel splitsen
 on: [push]
 
 jobs:
-  toepassingsprofiel_opsplitsen:
+  toepassingsprofiel_splitsen:
     runs-on: ubuntu-latest
-    name: Toepassingsprofiel opsplitsen
+    name: Toepassingsprofiel splitsen
     steps:
       # To use this repository's private action, you must check out the repository
       - name: Checkout
