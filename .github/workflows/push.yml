@@ -2,9 +2,9 @@ name: Toepassingsprofiel splitsen
 on: [push]
 
 jobs:
-  toepassingsprofiel_splitsen:
+  init:
     runs-on: ubuntu-latest
-    name: Toepassingsprofiel splitsen
+    name: Initiële handelingen
     steps:
       # To use this repository's private action, you must check out the repository
       - name: Checkout
@@ -14,6 +14,10 @@ jobs:
         id: push
         with:
           tpod-id: 'bt'
+  exit:
+    runs-on: ubuntu-latest
+    name: Initiële handelingen
+    steps:
       # Use the output from the `push` step
       - name: Get the output time
         run: echo "The time was ${{ steps.push.outputs.time }}"
