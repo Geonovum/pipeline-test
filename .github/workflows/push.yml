@@ -16,7 +16,7 @@ jobs:
           tpod-id: 'bt'
   exit:
     runs-on: ubuntu-latest
-    name: Initiële handelingen
+    name: Afsluitende handelingen
     steps:
       # Use the output from the `push` step
       - name: Get the output time
